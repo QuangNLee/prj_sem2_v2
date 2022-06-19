@@ -1,0 +1,38 @@
+- VNPAY:
+    + Ngan hang: NCB
+    + The: 	9704198526191432198
+    + Chu the: NGUYEN VAN A
+    + Ngay phat hanh: 07/15
+    + OPT: 123456
+- MOMO ATM (Han muc: 30tr):
+    + The: 9704 0000 0000 0018
+    + Chu the: NGUYEN VAN A
+    + Ngay phat hanh: 03/07
+    + SDT: 0917003003, 0917030000, 0917030003, 0917030030, 0917030300, 0917300300
+    + OTP: OTP
+
+    Ham thanh toan MOMO (dang loi):
+    <form action="paymentgatemomo.php" class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="total_payment" value="<?php echo $gtotal; ?>">
+        <button class="btn btn-success btn-payment" name="captureWallet">Cash by QR MOMO</button>
+    </form><br>
+    <form action="paymentgatemomoatm.php" class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="total_payment" value="<?php echo $gtotal; ?>">
+        <button class="btn btn-success btn-payment" name="payWithATM">Cash by ATM MOMO</button>
+    </form><br>
+
+- ONEPAY ATM:
+    + Ngan hang: ABB
+    + The: 9704250000000001
+    + Nam phat hanh: 01/13
+    + Ten: NGUYEN VAN A
+    + OTP: 123456
+
+    Ham thanh toan ONEPAY (dang loi):
+    <!--                    <form action="paymentgateonepay.php" method="POST">-->
+    <!--                        <input type="hidden" name="total_payment" value="--><?php //echo $gtotal; ?><!--">-->
+    <!--                        <button class="btn btn-success btn-payment" name="">Cash by ATM ONEPAY</button>-->
+    <!--                    </form>-->
+- PAYPAL:
+    + email: sb-gatxr16563610@personal.example.com
+    + pass: [p7eB8$W
