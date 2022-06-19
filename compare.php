@@ -57,18 +57,18 @@ if (!isset($_GET['id'])){
                                                     <table class="table table-striped">
                                                         <tbody>
                                                         <?php
-                                                        $get_pro_spec = $product->get_product_spec($result['productId']);
-                                                        if($get_pro_spec){
-                                                            while ($result_pro_spec = $get_pro_spec->fetch_assoc()){
-                                                                ?>
-                                                                <tr>
-                                                                    <td><?php echo $result_pro_spec['name'] ?></td>
-                                                                    <td>:</td>
-                                                                    <td><?php echo $result_pro_spec['value'] ?></td>
-                                                                </tr>
-                                                                <?php
+                                                            $get_pro_spec = $product->get_product_spec($result['productId']);
+                                                            if($get_pro_spec){
+                                                                while ($result_pro_spec = $get_pro_spec->fetch_assoc()){
+                                                        ?>
+                                                        <tr>
+                                                            <td><?php echo $result_pro_spec['name'] ?></td>
+                                                            <td>:</td>
+                                                            <td><?php echo $result_pro_spec['value'] ?></td>
+                                                        </tr>
+                                                        <?php
+                                                                }
                                                             }
-                                                        }
                                                         ?>
                                                         </tbody>
                                                     </table>
