@@ -16,7 +16,7 @@
                     if($list_brand){
                         while ($result = $list_brand->fetch_assoc()){
                 ?>
-                    <h4><a class="btn btn-brand" href="productbybrand.php?brandId=<?php echo $result['brandId'] ?>"><?php echo $result['brandName'] ?></a></h4>
+                <h4><a class="btn btn-brand" href="productbybrand.php?brandId=<?php echo $result['brandId'] ?>"><?php echo $result['brandName'] ?></a></h4>
                 <?php
                         }
                     }

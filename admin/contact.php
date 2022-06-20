@@ -22,12 +22,12 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                     <tr>
-                        <th width="5%" style="text-align: center">ID</th>
-                        <th width="10%" style="text-align: center">Name</th>
-                        <th width="15%" style="text-align: center">Email</th>
-                        <th width="10%" style="text-align: center">Phone</th>
-                        <th width="50%" style="text-align: center">Question</th>
-                        <th width="10%" style="text-align: center">Status</th>
+                        <th width="5%" style="text-align: center; vertical-align: middle">ID</th>
+                        <th width="10%" style="text-align: center; vertical-align: middle">Name</th>
+                        <th width="15%" style="text-align: center; vertical-align: middle">Email</th>
+                        <th width="10%" style="text-align: center; vertical-align: middle">Phone</th>
+                        <th width="50%" style="text-align: center; vertical-align: middle">Question</th>
+                        <th width="10%" style="text-align: center; vertical-align: middle">Status</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -43,12 +43,12 @@
                                 while($result = $get_pagination_contact->fetch_assoc()){
                         ?>
                         <tr>
-                            <td style="text-align: center"><?php echo $result['id']; ?></td>
-                            <td style="text-align: center"><?php echo $result['name'] ?></td>
-                            <td style="text-align: center"><?php echo $result['email'] ?></td>
-                            <td style="text-align: center"><?php echo $result['phone'] ?></td>
+                            <td style="text-align: center; vertical-align: middle"><?php echo $result['id']; ?></td>
+                            <td style="text-align: center; vertical-align: middle"><?php echo $result['name'] ?></td>
+                            <td style="text-align: center; vertical-align: middle"><?php echo $result['email'] ?></td>
+                            <td style="text-align: center; vertical-align: middle"><?php echo $result['phone'] ?></td>
                             <td><?php echo $result['subject'] ?></td>
-                            <td style="text-align: center">
+                            <td style="text-align: center; vertical-align: middle">
                                 <?php
                                     if($result['status'] == 1){
                                 ?>

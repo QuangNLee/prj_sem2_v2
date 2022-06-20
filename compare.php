@@ -23,9 +23,9 @@ if (!isset($_GET['id'])){
             </div><br>
             <div class="section group">
                 <?php
-                if (isset($delcompare)){
-                    echo $delcompare;
-                }
+                    if (isset($delcompare)){
+                        echo $delcompare;
+                    }
                 ?>
                 <table class="tblone">
                     <tr>
@@ -85,15 +85,15 @@ if (!isset($_GET['id'])){
                     <?php
                             }
                         } else {
-                        echo "Your compare list is empty!!!";
+                            echo "Your compare list is empty!!!";
                         }
                     ?>
                 </table>
-
             </div>
-            <div class="shopping">
-                <div class="shopleft">
-                    <a href="index.php"> <img src="images/shop.png" alt="" /></a>
+                <div class="shopping">
+                    <div class="shopleft">
+                        <a href="index.php"> <img src="images/shop.png" alt="" /></a>
+                    </div>
                 </div>
             </div>
             <div class="clear"></div>

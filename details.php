@@ -42,33 +42,33 @@
                                 <div id="products">
                                     <div class="slides_container">
                                         <a><img src="admin/uploads/<?php echo $result_details['image'] ?>" alt="" /></a>
-                                    </div>
+                                    </div><br><br><br>
                                     <div>
-                                        <button type="button" class="buysubmit modal-btn" data-target="#modal<?php echo $id ?>">Show specification</button>
+                                        <button type="button" class="btn btn-brand modal-btn" data-target="#modal<?php echo $id ?>">Show specification</button>
                                         <!-- The Modal -->
                                         <div id="modal<?php echo $id ?>" class="modal">
                                             <!-- Modal content -->
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <button style="border: none" class="close modal-btn buysubmit" data-target="#modal<?php echo $id ?>">&times;</button>
+                                                    <button class="close modal-btn buysubmit" data-target="#modal<?php echo $i ?>">&times;</button>
                                                     <h2>Specification</h2>
                                                 </div><br>
                                                 <div class="modal-body">
                                                     <table class="table table-striped">
                                                         <tbody>
                                                         <?php
-                                                            $get_pro_spec = $product->get_product_spec($id);
-                                                            if($get_pro_spec){
-                                                                while ($result_pro_spec = $get_pro_spec->fetch_assoc()){
-                                                        ?>
-                                                        <tr>
-                                                            <td><?php echo $result_pro_spec['name'] ?></td>
-                                                            <td>:</td>
-                                                            <td><?php echo $result_pro_spec['value'] ?></td>
-                                                        </tr>
-                                                        <?php
-                                                                }
+                                                        $get_pro_spec = $product->get_product_spec($id);
+                                                        if($get_pro_spec){
+                                                            while ($result_pro_spec = $get_pro_spec->fetch_assoc()){
+                                                                ?>
+                                                                <tr>
+                                                                    <td><?php echo $result_pro_spec['name'] ?></td>
+                                                                    <td>:</td>
+                                                                    <td><?php echo $result_pro_spec['value'] ?></td>
+                                                                </tr>
+                                                                <?php
                                                             }
+                                                        }
                                                         ?>
                                                         </tbody>
                                                     </table>
@@ -89,19 +89,19 @@
                         <form action="" method="post" class="row">
                             <input type="number" class="buyfield" name="quantity" value="1" min="1"/>
                                 <div style="margin-left: 30px">
-                                    <span><input type="submit" class="btn buysubmit" name="submit" value="Buy Now"/></span>
+                                    <span><input type="submit" class="btn btn-brand" name="submit" value="Buy Now"/></span>
                                 </div>
                                 <div class="clear"></div>
                         </form><br>
                         <div class="wish-list">
-                            <form action="" method="post" class="row" style="width: 75%; justify-content: space-between">
+                            <form action="" method="post" class="row" style="width: 80%; justify-content: space-between">
                                 <input type="hidden" name="productid" value="<?php echo $result_details['productId'] ?>"/>
                                 <?php
                                     $login_check = Session::get('customer_login');
                                     if ($login_check){
                                         echo '
-                                            <input type="submit" class="btn buysubmit" name="flist" value="Save to favorite list"/>
-                                            <input type="submit" class="btn buysubmit" name="compare" value="Compare Product"/>
+                                            <input type="submit" class="btn btn-brand" name="flist" value="Save to favorite list"/>
+                                            <input type="submit" class="btn btn-brand" name="compare" value="Compare Product"/>
                                         ';
                                     }
                                 ?>
@@ -179,7 +179,7 @@
                                 ?>
                                 <div class="grid_1_of_4 images_1_of_4">
                                     <a href="details.php?productId=<?php echo $result_related['productId'] ?>"><img src="admin/uploads/<?php echo $result_related['image'] ?>" alt=""></a>
-                                    <h4><?php echo $fm->textShorten($result_related['productName'], 20) ?></h4>
+                                    <h2><?php echo $fm->textShorten($result_related['productName'], 20) ?></h2>
                                     <div class="price" style="border:none">
                                         <div class="add-cart" style="float:none">
                                             <h4><a href="details.php?productId=<?php echo $result_related['productId'] ?>">Details</a></h4>

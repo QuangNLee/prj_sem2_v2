@@ -80,7 +80,7 @@
                                     <label>Password</label>
                                     <input class="au-input au-input--full" type="password" name="password" placeholder="Password" required>
                                 </div>
-                                <input class="au-btn au-btn--block au-btn--grey m-b-20" type="submit" name="login" value="Login">
+                                <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" name="login" value="Login">
                             </form>
                             <div class="register-link">
                                 <p>

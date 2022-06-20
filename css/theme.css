@@ -462,7 +462,7 @@ section {
 
 .au-btn:hover {
     color: #fff;
-    background: #B81D22;
+    background: #3868cd;
 }
 
 .au-btn--blue2 {
@@ -493,14 +493,6 @@ section {
 
 .au-btn--green:hover {
     background: #59bd60;
-}
-
-.au-btn--grey{
-    background: #585858;
-}
-
-.au-btn-grey:hover{
-    background: #585858;
 }
 
 .au-btn-plus {

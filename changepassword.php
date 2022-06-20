@@ -52,7 +52,7 @@
                         <td>
                         </td>
                         <td>
-                            <input class="btn btn-brand" style="color: white" type="submit" name="submit" Value="Update" />
+                            <input type="submit" name="submit" Value="Update" />
                         </td>
                     </tr>
                 </table>

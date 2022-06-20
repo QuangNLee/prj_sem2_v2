@@ -25,8 +25,7 @@
                         </div>
                         <div class="add-cart">
                             <h4><a href="details.php?productId=<?php echo $result_new['productId'] ?>">Details</a></h4>
-                         </div>
-                        <div class="clear"></div>
+                        </div>
                     </div>
                 </div>
                 <?php
@@ -40,7 +39,7 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            <div class="section group">
+            <div class="section group box">
                 <?php
                     $product_featured = $product->getproduct_featured();
                     if($product_featured){

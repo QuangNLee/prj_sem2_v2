@@ -71,9 +71,9 @@
                                     while($result = $get_pagination_order->fetch_assoc()){
                             ?>
                             <tr>
-                                <td style="vertical-align: middle; text-align: center"><?php echo $result['id'] ?></td>
-                                <td style="vertical-align: middle; text-align: center"><?php echo $fm->formatDate($result['createdAt']) ?></td>
-                                <td style="vertical-align: middle; text-align: center">
+                                <td style="text-align: center; vertical-align: middle"><?php echo $result['id'] ?></td>
+                                <td style="text-align: center; vertical-align: middle"><?php echo $fm->formatDate($result['createdAt']) ?></td>
+                                <td style="text-align: center; vertical-align: middle">
                                     <?php
                                         if($result['orderType'] == 0){
                                             echo '<span style="text-align: center; color: red">Offline Payment</span>';
@@ -82,13 +82,13 @@
                                         }
                                     ?>
                                 </td>
-                                <td style="vertical-align: middle; text-align: center"><?php echo $result['gate'] ?></td>
-                                <td style="vertical-align: middle; text-align: center"><?php echo $result['customerId'] ?></td>
-                                <td style="vertical-align: middle; text-align: center"><a href="customer.php?customerId=<?php echo $result['customerId'] ?>">View customer</a></td>
-                                <td style="vertical-align: middle; text-align: center"><?php echo $result['productName'] ?></td>
-                                <td style="vertical-align: middle; text-align: center"><?php echo $result['quantity'] ?></td>
-                                <td style="vertical-align: middle; text-align: center"><?php echo $fm->format_currency($result['total']) ?></td>
-                                <td style="vertical-align: middle; text-align: center">
+                                <td style="text-align: center; vertical-align: middle"><?php echo $result['gate'] ?></td>
+                                <td style="text-align: center; vertical-align: middle"><?php echo $result['customerId'] ?></td>
+                                <td style="text-align: center; vertical-align: middle"><a href="customer.php?customerId=<?php echo $result['customerId'] ?>">View customer</a></td>
+                                <td style="text-align: center; vertical-align: middle"><?php echo $result['productName'] ?></td>
+                                <td style="text-align: center; vertical-align: middle"><?php echo $result['quantity'] ?></td>
+                                <td style="text-align: center; vertical-align: middle"><?php echo $fm->format_currency($result['total']) ?></td>
+                                <td style="text-align: center; vertical-align: middle">
                                     <?php
                                         if($result['status'] == 0){
                                             echo '<span style="color: #7C2DC5">Pending</span>';
@@ -101,7 +101,7 @@
                                         }
                                     ?>
                                 </td>
-                                <td style="vertical-align: middle; text-align: center">
+                                <td style="text-align: center; vertical-align: middle">
                                     <?php
                                         if($result['status'] == 0){
                                     ?>

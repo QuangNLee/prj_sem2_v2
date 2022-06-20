@@ -25,7 +25,7 @@
                 }
             ?>
             <div class="clear"></div>
-        </div>
+        </div><br>
         <div class="section group">
             <?php
                 $limit = 12;
