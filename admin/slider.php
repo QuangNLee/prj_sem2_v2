@@ -35,11 +35,11 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Slider Title</th>
-                                <th>Slider Image</th>
-                                <th>Slider Status</th>
-                                <th>Action</th>
+                                <th style="text-align: center">ID</th>
+                                <th style="text-align: center">Slider Title</th>
+                                <th style="text-align: center">Slider Image</th>
+                                <th style="text-align: center">Slider Status</th>
+                                <th style="text-align: center">Action</th>
                             </tr>
                         </thead>
                         <tbody>

@@ -45,17 +45,17 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Order time</th>
-                            <th>Type</th>
-                            <th>Gate</th>
-                            <th>Customer ID</th>
-                            <th>Customer</th>
-                            <th>Product</th>
-                            <th>Quantity</th>
-                            <th>Price</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                            <th style="text-align: center; vertical-align: middle">ID</th>
+                            <th style="text-align: center; vertical-align: middle">Order time</th>
+                            <th style="text-align: center; vertical-align: middle">Type</th>
+                            <th style="text-align: center; vertical-align: middle">Gate</th>
+                            <th style="text-align: center; vertical-align: middle">Customer ID</th>
+                            <th style="text-align: center; vertical-align: middle">Customer</th>
+                            <th style="text-align: center; vertical-align: middle">Product</th>
+                            <th style="text-align: center; vertical-align: middle">Quantity</th>
+                            <th style="text-align: center; vertical-align: middle">Price</th>
+                            <th style="text-align: center; vertical-align: middle">Status</th>
+                            <th style="text-align: center; vertical-align: middle">Action</th>
                         </tr>
                         </thead>
                         <tbody>

@@ -84,7 +84,7 @@
                             <td><input type="text" name="email" value="<?php echo $result['email'] ?>"></td>
                         </tr>
                         <tr>
-                            <td colspan="3"><input type="submit" name="save" value="Save" class="grey"></td>
+                            <td colspan="3"><input type="submit" name="save" value="Save" class="btn btn-brand"></td>
                         </tr>
                         <?php
                                 }

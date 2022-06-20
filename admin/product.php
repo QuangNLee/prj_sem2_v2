@@ -51,11 +51,11 @@
                             ?>
                             <tr>
                                 <td style="text-align: center; vertical-align: middle"><?php echo $result['productId'] ?></td>
-                                <td><?php echo $result['productName'] ?></td>
-                                <td><?php echo $result['catName'] ?></td>
-                                <td><?php echo $result['brandName'] ?></td>
-                                <td><?php echo $fm->textShorten($result['product_description'], 30) ?></td>
-                                <td><?php
+                                <td style="text-align: center; vertical-align: middle"><?php echo $result['productName'] ?></td>
+                                <td style="text-align: center; vertical-align: middle"><?php echo $result['catName'] ?></td>
+                                <td style="text-align: center; vertical-align: middle"><?php echo $result['brandName'] ?></td>
+                                <td style="text-align: center; vertical-align: middle"><?php echo $fm->textShorten($result['product_description'], 30) ?></td>
+                                <td style="text-align: center; vertical-align: middle"><?php
                                     if($result['type'] == 1){
                                         echo '<span style="color: blue">Featured</span>';
                                     } else {
@@ -63,9 +63,9 @@
                                     }
                                     ?>
                                 </td>
-                                <td style="text-align: center"><?php echo $fm->format_currency($result['price']) ?> VND</td>
-                                <td style="text-align: center"><img src="uploads/<?php echo $result['image'] ?>" width="50px"/></td>
-                                <td style="text-align: center">
+                                <td style="text-align: center; vertical-align: middle"><?php echo $fm->format_currency($result['price']) ?> VND</td>
+                                <td style="text-align: center; vertical-align: middle"><img src="uploads/<?php echo $result['image'] ?>" width="50px"/></td>
+                                <td style="text-align: center; vertical-align: middle">
                                     <?php
                                         if($result['status'] == 1){
                                             echo '<span style="color: green">Available</span>';
@@ -74,7 +74,7 @@
                                         }
                                     ?>
                                 </td>
-                                <td style="text-align: center"><a href="productedit.php?productId=<?php echo $result['productId'] ?>">Edit</a></td>
+                                <td style="text-align: center; vertical-align: middle"><a href="productedit.php?productId=<?php echo $result['productId'] ?>">Edit</a></td>
                             </tr>
                             <?php
                                     }

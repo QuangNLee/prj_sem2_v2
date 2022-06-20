@@ -61,7 +61,7 @@
                             <tr>
                                 <td>Password</td>
                                 <td>:</td>
-                                <td><a href="changepassword.php" class="btn buysubmit" style="color: white">Change password</a></td>
+                                <td><a href="changepassword.php" class="btn btn-brand" style="color: white">Change password</a></td>
                             </tr>
                             <tr>
                                 <td colspan="3"><a href="editprofile.php">Update information</a></td>

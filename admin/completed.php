@@ -32,15 +32,15 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Order time</th>
-                            <th>Type</th>
-                            <th>Customer ID</th>
-                            <th>Customer</th>
-                            <th>Product</th>
-                            <th>Quantity</th>
-                            <th>Price</th>
-                            <th>Status</th
+                            <th style="text-align: center;vertical-align: middle">ID</th>
+                            <th style="text-align: center;vertical-align: middle">Order time</th>
+                            <th style="text-align: center;vertical-align: middle">Type</th>
+                            <th style="text-align: center;vertical-align: middle">Customer ID</th>
+                            <th style="text-align: center;vertical-align: middle">Customer</th>
+                            <th style="text-align: center;vertical-align: middle">Product</th>
+                            <th style="text-align: center;vertical-align: middle">Quantity</th>
+                            <th style="text-align: center;vertical-align: middle">Price</th>
+                            <th style="text-align: center;vertical-align: middle">Status</th
                         </tr>
                         </thead>
                         <tbody>
@@ -55,10 +55,10 @@
                             if($get_pagination_order){
                                 while($result = $get_pagination_order->fetch_assoc()){
                         ?>
-                            <tr class="odd gradeX">
-                                <td><?php echo $result['id'] ?></td>
-                                <td><?php echo $fm->formatDate($result['createdAt']) ?></td>
-                                <td>
+                            <tr>
+                                <td style="text-align: center;vertical-align: middle"><?php echo $result['id'] ?></td>
+                                <td style="text-align: center;vertical-align: middle"><?php echo $fm->formatDate($result['createdAt']) ?></td>
+                                <td style="text-align: center;vertical-align: middle">
                                     <?php
                                         if($result['orderType'] == 0){
                                             echo '<span style="text-align: center; color: red">Offline Payment</span>';
@@ -67,19 +67,19 @@
                                         }
                                     ?>
                                 </td>
-                                <td style="text-align: center"><?php echo $result['customerId'] ?></td>
-                                <td><a href="customer.php?customerId=<?php echo $result['customerId'] ?>">View customer</a></td>
-                                <td><?php echo $result['productName'] ?></td>
-                                <td><?php echo $result['quantity'] ?></td>
-                                <td><?php echo $fm->format_currency($result['total']) ?></td>
+                                <td style="text-align: center;vertical-align: middle"><?php echo $result['customerId'] ?></td>
+                                <td style="text-align: center;vertical-align: middle"><a href="customer.php?customerId=<?php echo $result['customerId'] ?>">View customer</a></td>
+                                <td style="text-align: center;vertical-align: middle"><?php echo $result['productName'] ?></td>
+                                <td style="text-align: center;vertical-align: middle"><?php echo $result['quantity'] ?></td>
+                                <td style="text-align: center;vertical-align: middle"><?php echo $fm->format_currency($result['total']) ?></td>
                                 <?php
                                     if($result['status'] == 2){
                                 ?>
-                                <td style="text-align: center"><a style="color: green">Success</a></td>
+                                <td style="text-align: center;vertical-align: middle"><a style="color: green">Success</a></td>
                                 <?php
                                     } else {
                                 ?>
-                                <td><a style="color: #8B0000">Canceled</a></td>
+                                <td style="text-align: center;vertical-align: middle"><a style="color: #8B0000">Canceled</a></td>
                                 <?php
                                     }
                                 ?>

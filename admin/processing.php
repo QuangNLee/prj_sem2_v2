@@ -44,16 +44,16 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Order time</th>
-                                <th>Type</th>
-                                <th>Customer ID</th>
-                                <th>Customer</th>
-                                <th>Product</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th>Status</th>
-                                <th>Action</th>
+                                <th style="vertical-align: middle; text-align: center">ID</th>
+                                <th style="vertical-align: middle; text-align: center">Order time</th>
+                                <th style="vertical-align: middle; text-align: center">Type</th>
+                                <th style="vertical-align: middle; text-align: center">Customer ID</th>
+                                <th style="vertical-align: middle; text-align: center">Customer</th>
+                                <th style="vertical-align: middle; text-align: center">Product</th>
+                                <th style="vertical-align: middle; text-align: center">Quantity</th>
+                                <th style="vertical-align: middle; text-align: center">Price</th>
+                                <th style="vertical-align: middle; text-align: center">Status</th>
+                                <th style="vertical-align: middle; text-align: center">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -65,9 +65,9 @@
                                 while ($result = $get_inbox_order->fetch_assoc()){
                         ?>
                             <tr class="odd gradeX">
-                                <td><?php echo $result['id'] ?></td>
-                                <td><?php echo $fm->formatDate($result['createdAt']) ?></td>
-                                <td>
+                                <td style="vertical-align: middle; text-align: center"><?php echo $result['id'] ?></td>
+                                <td style="vertical-align: middle; text-align: center"><?php echo $fm->formatDate($result['createdAt']) ?></td>
+                                <td style="vertical-align: middle; text-align: center">
                                     <?php
                                         if($result['orderType'] == 0){
                                             echo '<span style="text-align: center; color: red">Offline Payment</span>';
@@ -76,12 +76,12 @@
                                         }
                                     ?>
                                 </td>
-                                <td><?php echo $result['customerId'] ?></td>
-                                <td><a href="customer.php?customerId=<?php echo $result['customerId'] ?>">View customer</a></td>
-                                <td><?php echo $result['productName'] ?></td>
-                                <td><?php echo $result['quantity'] ?></td>
-                                <td><?php echo $fm->format_currency($result['total']) ?></td>
-                                <td>
+                                <td style="vertical-align: middle; text-align: center"><?php echo $result['customerId'] ?></td>
+                                <td style="vertical-align: middle; text-align: center"><a href="customer.php?customerId=<?php echo $result['customerId'] ?>">View customer</a></td>
+                                <td style="vertical-align: middle; text-align: center"><?php echo $result['productName'] ?></td>
+                                <td style="vertical-align: middle; text-align: center"><?php echo $result['quantity'] ?></td>
+                                <td style="vertical-align: middle; text-align: center"><?php echo $fm->format_currency($result['total']) ?></td>
+                                <td style="vertical-align: middle; text-align: center">
                                     <?php
                                         if($result['status'] == 0){
                                             echo '<span style="color: #7C2DC5">Pending</span>';
@@ -94,7 +94,7 @@
                                         }
                                     ?>
                                 </td>
-                                <td style="text-align: center;">
+                                <td style="vertical-align: middle; text-align: center">
                                     <?php
                                         if($result['status'] == 0){
                                     ?>

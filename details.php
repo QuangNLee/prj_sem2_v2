@@ -42,7 +42,7 @@
                                 <div id="products">
                                     <div class="slides_container">
                                         <a><img src="admin/uploads/<?php echo $result_details['image'] ?>" alt="" /></a>
-                                    </div><br><br><br>
+                                    </div>
                                     <div>
                                         <button type="button" class="buysubmit modal-btn" data-target="#modal<?php echo $id ?>">Show specification</button>
                                         <!-- The Modal -->
@@ -50,25 +50,25 @@
                                             <!-- Modal content -->
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <button class="close modal-btn buysubmit" data-target="#modal<?php echo $i ?>">&times;</button>
+                                                    <button style="border: none" class="close modal-btn buysubmit" data-target="#modal<?php echo $id ?>">&times;</button>
                                                     <h2>Specification</h2>
                                                 </div><br>
                                                 <div class="modal-body">
                                                     <table class="table table-striped">
                                                         <tbody>
                                                         <?php
-                                                        $get_pro_spec = $product->get_product_spec($id);
-                                                        if($get_pro_spec){
-                                                            while ($result_pro_spec = $get_pro_spec->fetch_assoc()){
-                                                                ?>
-                                                                <tr>
-                                                                    <td><?php echo $result_pro_spec['name'] ?></td>
-                                                                    <td>:</td>
-                                                                    <td><?php echo $result_pro_spec['value'] ?></td>
-                                                                </tr>
-                                                                <?php
+                                                            $get_pro_spec = $product->get_product_spec($id);
+                                                            if($get_pro_spec){
+                                                                while ($result_pro_spec = $get_pro_spec->fetch_assoc()){
+                                                        ?>
+                                                        <tr>
+                                                            <td><?php echo $result_pro_spec['name'] ?></td>
+                                                            <td>:</td>
+                                                            <td><?php echo $result_pro_spec['value'] ?></td>
+                                                        </tr>
+                                                        <?php
+                                                                }
                                                             }
-                                                        }
                                                         ?>
                                                         </tbody>
                                                     </table>
@@ -94,7 +94,7 @@
                                 <div class="clear"></div>
                         </form><br>
                         <div class="wish-list">
-                            <form action="" method="post" class="row" style="width: 70%; justify-content: space-between">
+                            <form action="" method="post" class="row" style="width: 75%; justify-content: space-between">
                                 <input type="hidden" name="productid" value="<?php echo $result_details['productId'] ?>"/>
                                 <?php
                                     $login_check = Session::get('customer_login');

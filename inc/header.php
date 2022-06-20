@@ -59,7 +59,8 @@
                             echo '<li><a href="login.php">Login</a></li>
                                   <li><a href="register.php">Register</a></li>';
                         } else {
-                            echo '<li><a href="?customer_id='.Session::get('customer_id').'">Logout</a></li>';
+                            echo '<li><a href="profile.php">Profile</a></li>
+                                  <li><a href="?customer_id='.Session::get('customer_id').'">Logout</a></li>';
                         }
                     ?>
                 </ul>
@@ -119,14 +120,6 @@
                             echo '<li><a href="order.php">All order</a></li>';
                         } else {
                             echo '';
-                        }
-                    ?>
-                    <?php
-                        $login_check = Session::get('customer_login');
-                        if($login_check == false){
-                            echo '';
-                        } else {
-                            echo '<li><a href="profile.php">Profile</a></li>';
                         }
                     ?>
                     <?php
