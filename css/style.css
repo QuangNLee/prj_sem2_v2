@@ -2634,3 +2634,48 @@ table.tblone img {
 	cursor:pointer;
 	outline:none;
 }
+.btn-brand {
+	color: #fff;
+	background-color: #585858;
+	border-color: #fff;
+}
+.btn-brand:hover {
+	color: #fff;
+	background-color: #B81D22;
+	border-color: #e6e6e6;
+}
+.btn-brand:focus, .btn-brand.focus {
+	color: #fff;
+	background-color: #585858;
+	border-color: #e6e6e6;
+	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+.btn-brand.disabled, .btn-brand:disabled {
+	color: #fff;
+	background-color: #585858;
+	border-color: #fff;
+}
+.btn-brand:not(:disabled):not(.disabled):active, .btn-brand:not(:disabled):not(.disabled).active,
+.show > .btn-brand.dropdown-toggle {
+	color: #fff;
+	background-color: #585858;
+	border-color: #dfdfdf;
+}
+.btn-brand:not(:disabled):not(.disabled):active:focus, .btn-brand:not(:disabled):not(.disabled).active:focus,
+.show > .btn-brand.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+.btn-block + .btn-block {
+	margin-top: 0.5rem;
+}
+
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+	width: 100%;
+}

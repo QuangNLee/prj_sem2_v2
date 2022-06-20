@@ -8,15 +8,15 @@
                 <h3>New Products</h3>
             </div>
             <div class="clear"></div>
-        </div>
+        </div><br>
         <div class="section group">
-            <div class="add-cart row" style="justify-content: space-between; float: left; margin-top: 10px; margin-bottom: 10px; padding-left: 2px">
+            <div class="row" style="display: -ms-flex; justify-content: space-between">
                 <?php
                     $list_brand = $brand->list_brand();
                     if($list_brand){
                         while ($result = $list_brand->fetch_assoc()){
                 ?>
-                <h4><a href="productbybrand.php?brandId=<?php echo $result['brandId'] ?>"><?php echo $result['brandName'] ?></a></h4>
+                    <h4><a class="btn btn-brand" href="productbybrand.php?brandId=<?php echo $result['brandId'] ?>"><?php echo $result['brandName'] ?></a></h4>
                 <?php
                         }
                     }

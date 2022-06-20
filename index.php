@@ -24,7 +24,7 @@
                             <p><span class="price"><?php echo $fm->format_currency($result_new['price'])." VND" ?></span></p>
                         </div>
                         <div class="add-cart">
-                            <h4><a href="details.php?productId=<?php echo $result_new['productId'] ?>">Add to Cart</a></h4>
+                            <h4><a href="details.php?productId=<?php echo $result_new['productId'] ?>">Details</a></h4>
                          </div>
                         <div class="clear"></div>
                     </div>
