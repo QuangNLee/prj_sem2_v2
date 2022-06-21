@@ -23,7 +23,7 @@
             </div>
             <div class="section group">
                 <?php
-                    $limit = 100;
+                    $limit = 200;
                     $total_product = mysqli_num_rows($search_product);
                     $current_page_product = isset($_GET['page']) ? $_GET['page'] : 1;
                     $product_start = ($current_page_product -1) * $limit;
@@ -35,6 +35,7 @@
                 <div class="grid_1_of_4 images_1_of_4">
                     <a href="details.php?productId=<?php echo $result['productId'] ?>"><img src="admin/uploads/<?php echo $result['image'] ?>" alt="" /></a>
                     <h2><?php echo $result['productName'] ?></h2>
+                    <span class="tooltiptext"><?php echo $result['productName'] ?></span>
                     <div class="price-details">
                         <div class="price-number">
                             <p><span class="price"><?php echo $fm->format_currency($result['price'])." VND" ?></span></p>

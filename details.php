@@ -42,7 +42,7 @@
                                 <div id="products">
                                     <div class="slides_container">
                                         <a><img src="admin/uploads/<?php echo $result_details['image'] ?>" alt="" /></a>
-                                    </div><br><br><br>
+                                    </div><br>
                                     <div>
                                         <button type="button" class="btn btn-brand modal-btn" data-target="#modal<?php echo $id ?>">Show specification</button>
                                         <!-- The Modal -->
@@ -50,7 +50,7 @@
                                             <!-- Modal content -->
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <button class="close modal-btn buysubmit" data-target="#modal<?php echo $i ?>">&times;</button>
+                                                    <button class="close modal-btn buysubmit" style="border: none; font-size: 18px" data-target="#modal<?php echo $i ?>">&times;</button>
                                                     <h2>Specification</h2>
                                                 </div><br>
                                                 <div class="modal-body">
@@ -179,7 +179,8 @@
                                 ?>
                                 <div class="grid_1_of_4 images_1_of_4">
                                     <a href="details.php?productId=<?php echo $result_related['productId'] ?>"><img src="admin/uploads/<?php echo $result_related['image'] ?>" alt=""></a>
-                                    <h2><?php echo $fm->textShorten($result_related['productName'], 20) ?></h2>
+                                    <h2><?php echo $result_related['productName'] ?></h2>
+                                    <span class="tooltiptext"><?php echo $result_related['productName'] ?></span>
                                     <div class="price" style="border:none">
                                         <div class="add-cart" style="float:none">
                                             <h4><a href="details.php?productId=<?php echo $result_related['productId'] ?>">Details</a></h4>

@@ -9,6 +9,7 @@
         $id = $_GET['change_status'];
         $status = $_GET['type'];
         $update_status = $customer->update_status_contact($id,$status);
+        echo "<meta http-equiv='refresh' content='0;URL=?id=live'>";
     }
 ?>
     <!-- Begin Page Content -->

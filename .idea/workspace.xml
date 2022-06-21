@@ -20,26 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00471261-fae5-4777-a0e1-2ca05784b20f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/prj_sem2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/completed.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/completed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/404.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/processing.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/processing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brands.php" beforeDir="false" afterPath="$PROJECT_DIR$/brands.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare.php" beforeDir="false" afterPath="$PROJECT_DIR$/compare.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/details.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/productbybrand.php" beforeDir="false" afterPath="$PROJECT_DIR$/productbybrand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/productbycat.php" beforeDir="false" afterPath="$PROJECT_DIR$/productbycat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +38,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,6 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -81,6 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655716615295</updated>
       <workItem from="1655716616837" duration="3540000" />
+      <workItem from="1655777823286" duration="6538000" />
     </task>
     <servers />
   </component>
@@ -97,11 +96,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1655716799086">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1655716799086" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1655780791678">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1655780791678" />
   </component>
 </project>

@@ -346,7 +346,7 @@ body {
 	max-width: 100%;
 }
 .images_1_of_4  h2 {
-	height: 50px;
+	height: 20px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -357,6 +357,24 @@ body {
 }
 .images_1_of_4  h2:hover{
 
+}
+.images_1_of_4 .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: #585858;
+	color: white;
+	text-align: center;
+	border-radius: 0;
+	margin-top: 1px;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+
+.images_1_of_4:hover .tooltiptext {
+	position: relative;
+	visibility: visible;
 }
 .images_1_of_4  p {
 	font-size: 0.8125em;
