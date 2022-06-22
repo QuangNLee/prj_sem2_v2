@@ -29,6 +29,7 @@
     <title>Online Store BD</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/404.css" rel="stylesheet" type="text/css" />
@@ -54,6 +55,7 @@
             ?>
             <div class="account_desc">
                 <ul>
+                    <li><a href="news.php">News</a></li>
                     <?php
                         $login_check = Session::get('customer_login');
                         if ($login_check == false){

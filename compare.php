@@ -29,11 +29,11 @@ if (!isset($_GET['id'])){
                 ?>
                 <table class="tblone">
                     <tr>
-                        <th width="15%">No.</th>
-                        <th width="25%">Product Name</th>
+                        <th width="5%">No.</th>
+                        <th width="40%">Product Name</th>
                         <th width="25%">Image</th>
                         <th width="15%">Price</th>
-                        <th width="20%">Action</th>
+                        <th width="15%">Action</th>
                     </tr>
                     <?php
                         $get_compare_list = $cart->get_all_compare($customer_id);
@@ -43,11 +43,11 @@ if (!isset($_GET['id'])){
                                 $i++;
                     ?>
                     <tr>
-                        <td><?php echo $i; ?></td>
-                        <td><?php echo $result['productName'] ?></td>
-                        <td><img src="admin/uploads/<?php echo $result['image'] ?>" alt=""/></td>
-                        <td><?php echo $fm->format_currency($result['price']) ?> VND</td>
-                        <td>
+                        <td style="text-align: center; vertical-align: middle"><?php echo $i; ?></td>
+                        <td style="text-align: center; vertical-align: middle"><?php echo $result['productName'] ?></td>
+                        <td style="text-align: center; vertical-align: middle"><img src="admin/uploads/<?php echo $result['image'] ?>" style="height: 60px; width: 80px" alt=""/></td>
+                        <td style="text-align: center; vertical-align: middle"><?php echo $fm->format_currency($result['price']) ?> VND</td>
+                        <td style="text-align: center; vertical-align: middle">
                             <input type="submit" class="buysubmit modal-btn" data-target="#modal<?php echo $i ?>" value="View"/>
                             <!-- The Modal -->
                             <div id="modal<?php echo $i ?>" class="modal">

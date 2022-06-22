@@ -18,20 +18,21 @@
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Contact</h1>
         </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                    <tr>
-                        <th width="5%" style="text-align: center; vertical-align: middle">ID</th>
-                        <th width="10%" style="text-align: center; vertical-align: middle">Name</th>
-                        <th width="15%" style="text-align: center; vertical-align: middle">Email</th>
-                        <th width="10%" style="text-align: center; vertical-align: middle">Phone</th>
-                        <th width="50%" style="text-align: center; vertical-align: middle">Question</th>
-                        <th width="10%" style="text-align: center; vertical-align: middle">Status</th>
-                    </tr>
-                    </thead>
-                    <tbody>
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th width="5%" style="text-align: center; vertical-align: middle">ID</th>
+                            <th width="10%" style="text-align: center; vertical-align: middle">Name</th>
+                            <th width="15%" style="text-align: center; vertical-align: middle">Email</th>
+                            <th width="10%" style="text-align: center; vertical-align: middle">Phone</th>
+                            <th width="50%" style="text-align: center; vertical-align: middle">Question</th>
+                            <th width="10%" style="text-align: center; vertical-align: middle">Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
                         <?php
                             $limit = 10;
                             $get_contact = $customer->get_contact();
@@ -59,49 +60,50 @@
                                 ?>
                                 <a onclick="return confirm('Are you sure?')" href="?change_status=<?php echo $result['id'] ?>&type=1" style="color: red">Waiting</a>
                                 <?php
-                                 }
+                                    }
                                 ?>
                             </td>
                         </tr>
-                            <?php
-                        }
-                    }
-                    ?>
-                    </tbody>
-                </table>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-7">
-                    <div class="dataTables_paginate paging_simple_numbers">
-                        <ul class="pagination">
-                            <?php
+                        <?php
+                                }
+                            }
+                        ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-7">
+                        <div class="dataTables_paginate paging_simple_numbers">
+                            <ul class="pagination">
+                                <?php
                                 if ($current_page_contact -1 > 0){
-                            ?>
-                            <li class="paginate_button page-item previous">
-                                <a href="contact.php?page=<?php echo $current_page_contact-1; ?>"class="page-link">Previous</a>
-                            </li>
-                            <?php
+                                    ?>
+                                    <li class="paginate_button page-item previous">
+                                        <a href="contact.php?page=<?php echo $current_page_contact-1; ?>"class="page-link">Previous</a>
+                                    </li>
+                                    <?php
                                 }
-                            ?>
-                            <?php
+                                ?>
+                                <?php
                                 for($i = 1; $i <= $total_page_contact; $i++){
-                            ?>
-                            <li class="paginate_button page-item <?php echo (($current_page_brand == $i)?'active': '') ?>">
-                                <a href="contact.php?page=<?php echo $i; ?>" class="page-link"><?php echo $i; ?></a>
-                            </li>
-                            <?php
+                                    ?>
+                                    <li class="paginate_button page-item <?php echo (($current_page_contact == $i)?'active': '') ?>">
+                                        <a href="contact.php?page=<?php echo $i; ?>" class="page-link"><?php echo $i; ?></a>
+                                    </li>
+                                    <?php
                                 }
-                            ?>
-                            <?php
+                                ?>
+                                <?php
                                 if($current_page_contact + 1 <= $total_page_contact){
-                            ?>
-                            <li class="paginate_button page-item next">
-                                <a href="contact.php?page=<?php echo $current_page_contact + 1; ?>" class="page-link">Next</a>
-                            </li>
-                            <?php
+                                    ?>
+                                    <li class="paginate_button page-item next">
+                                        <a href="contact.php?page=<?php echo $current_page_contact + 1; ?>" class="page-link">Next</a>
+                                    </li>
+                                    <?php
                                 }
-                            ?>
-                        </ul>
+                                ?>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
