@@ -56,7 +56,7 @@
             $div = explode('.', $file_name);
             $file_ext = strtolower(end($div));
             $unique_image = substr(md5(time()), 0, 10).'.'.$file_ext;
-            $uploaded_image = "uploads/".$unique_image;
+            $uploaded_image = "uploads/products/".$unique_image;
             if($productName == "" || $category == "" || $brand == "" || $product_description == "" || $price == "" || $type == "" || $file_name == ""){
                 $alert = "<span style='color: red; font-size: 18px'>Fields must be not empty!!!</span>";
                 return $alert;
@@ -345,7 +345,7 @@
             $div = explode('.', $file_name);
             $file_ext = strtolower(end($div));
             $unique_image = substr(md5(time()), 0, 10).'.'.$file_ext;
-            $uploaded_image = "uploads/".$unique_image;
+            $uploaded_image = "uploads/products/".$unique_image;
             if($productName == "" || $category == "" || $brand == "" || $product_description == "" || $price == "" || $type == "" || $status == ""){
                 $alert = "<span style='color: red; font-size: 18px'>Fields must be not empty!!!</span>";
                 return $alert;
@@ -489,28 +489,6 @@
                 FROM tbl_product AS p, tbl_category AS c, tbl_brand AS b
                 where p.catId = c.catId and p.brandId = b.brandId
                 and p.productId = '$id'";
-            $result = $this->db->select($query);
-            return $result;
-        }
-
-        public function getLastestIP(){
-            $query = "SELECT * FROM tbl_product WHERE brandId = (SELECT brandId FROM tbl_brand WHERE brandName LIKE 'apple') AND status = '1' ORDER BY productId DESC LIMIT 1";
-            $result = $this->db->select($query);
-            return $result;
-        }
-
-        public function getLastestSamsung(){
-            $query = "SELECT * FROM tbl_product WHERE brandId = (SELECT brandId FROM tbl_brand WHERE brandName LIKE 'samsung') AND status = '1' ORDER BY productId DESC LIMIT 1";
-            $result = $this->db->select($query);
-            return $result;
-        }
-        public function getLastestMSI(){
-            $query = "SELECT * FROM tbl_product WHERE brandId = (SELECT brandId FROM tbl_brand WHERE brandName LIKE 'msi') AND status = '1' ORDER BY productId DESC LIMIT 1";
-            $result = $this->db->select($query);
-            return $result;
-        }
-        public function getLastestDELL(){
-            $query = "SELECT * FROM tbl_product WHERE brandId = (SELECT brandId FROM tbl_brand WHERE brandName LIKE 'dell') AND status = '1' ORDER BY productId DESC LIMIT 1";
             $result = $this->db->select($query);
             return $result;
         }

@@ -57,7 +57,7 @@
                             <tr>
                                 <td style="text-align: center; vertical-align: middle"><?php echo $result_slider['id'] ?></td>
                                 <td style="text-align: center; vertical-align: middle"><?php echo $result_slider['sliderName'] ?></td>
-                                <td style="text-align: center; vertical-align: middle"><img src="uploads/<?php echo $result_slider['image'] ?>" height="120px" width="400px"/></td>
+                                <td style="text-align: center; vertical-align: middle"><img src="uploads/sliders/<?php echo $result_slider['image'] ?>" height="120px" width="400px"/></td>
                                 <td style="text-align: center; vertical-align: middle">
                                     <?php
                                         if($result_slider['type'] == 1){

@@ -41,7 +41,7 @@
                             <div id="products_example">
                                 <div id="products">
                                     <div class="slides_container">
-                                        <a><img src="admin/uploads/<?php echo $result_details['image'] ?>" alt="" /></a>
+                                        <a><img src="admin/uploads/products/<?php echo $result_details['image'] ?>" alt="" /></a>
                                     </div><br>
                                     <div>
                                         <button type="button" class="btn btn-brand modal-btn" data-target="#modal<?php echo $id ?>">Show specification</button>
@@ -178,7 +178,7 @@
                             while ($result_related = $get_related->fetch_assoc()){
                                 ?>
                                 <div class="grid_1_of_4 images_1_of_4">
-                                    <a href="details.php?productId=<?php echo $result_related['productId'] ?>"><img src="admin/uploads/<?php echo $result_related['image'] ?>" alt=""></a>
+                                    <a href="details.php?productId=<?php echo $result_related['productId'] ?>"><img src="admin/uploads/products/<?php echo $result_related['image'] ?>" alt=""></a>
                                     <h2><?php echo $result_related['productName'] ?></h2>
                                     <span class="tooltiptext"><?php echo $result_related['productName'] ?></span>
                                     <div class="price" style="border:none">

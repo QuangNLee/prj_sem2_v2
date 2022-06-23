@@ -64,7 +64,7 @@
                                     ?>
                                 </td>
                                 <td style="text-align: center; vertical-align: middle"><?php echo $fm->format_currency($result['price']) ?> VND</td>
-                                <td style="text-align: center; vertical-align: middle"><img src="uploads/<?php echo $result['image'] ?>" width="50px"/></td>
+                                <td style="text-align: center; vertical-align: middle"><img src="uploads/products/<?php echo $result['image'] ?>" width="50px"/></td>
                                 <td style="text-align: center; vertical-align: middle">
                                     <?php
                                         if($result['status'] == 1){

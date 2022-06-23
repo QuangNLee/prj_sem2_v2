@@ -8,7 +8,7 @@
 <?php
     $prod = new productController();
     if(!isset($_GET['productId']) || $_GET['productId'] == NULL){
-        echo "<script>window.location ='productlist.php'</script>";
+        echo "<script>window.location ='product.php'</script>";
     } else {
         $id = $_GET['productId'];
     }
@@ -116,7 +116,7 @@
                             <label>Upload image</label>
                         </div>
                         <div class="col-75">
-                            <img src="uploads/<?php echo $result_product['image'] ?>" width="50px"/>
+                            <img src="uploads/products/<?php echo $result_product['image'] ?>" width="50px"/>
                             <input type="file" name="image" />
                         </div>
                     </div>

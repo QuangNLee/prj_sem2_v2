@@ -25,7 +25,7 @@
                             if($get_slider){
                                 while ($result_slider = $get_slider->fetch_assoc()){
                         ?>
-                        <li><img src="admin/uploads/<?php echo $result_slider['image'] ?>" alt="<?php echo $result_slider['sliderName'] ?>" /></li>
+                        <li><img src="admin/uploads/sliders/<?php echo $result_slider['image'] ?>" alt="<?php echo $result_slider['sliderName'] ?>" /></li>
                         <?php
                                 }
                             }

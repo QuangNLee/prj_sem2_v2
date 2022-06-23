@@ -56,7 +56,7 @@
                 ?>
                 <tr>
                     <td style="text-align: center; vertical-align: middle"><?php echo $result['productName'] ?></td>
-                    <td style="text-align: center; vertical-align: middle"><img src="admin/uploads/<?php echo $result['image'] ?>" style="height: 60px; width: 80px" alt=""/></td>
+                    <td style="text-align: center; vertical-align: middle"><img src="admin/uploads/products/<?php echo $result['image'] ?>" style="height: 60px; width: 80px" alt=""/></td>
                     <td style="text-align: center; vertical-align: middle"><?php echo $fm->format_currency($result['price']) ?> VND</td>
                     <td style="text-align: center; vertical-align: middle">
                         <form action="" method="post">

@@ -6,7 +6,7 @@
 <?php
     $brand = new brandController();
     if(!isset($_GET['brandId']) || $_GET['brandId'] == NULL){
-        echo "<script>window.location ='brandlist.php'</script>";
+        echo "<script>window.location ='brand.php'</script>";
     } else {
         $id = $_GET['brandId'];
     }

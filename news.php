@@ -3,47 +3,65 @@
 ?>
     <div class="main">
         <div class="content">
+            <?php
+                $limit = 3;
+                $get_news_index = $news->get_news_index();
+                $total_news = mysqli_num_rows($get_news_index);
+                $current_page_news = isset($_GET['page']) ? $_GET['page'] : 1;
+                $news_start = ($current_page_news -1) * $limit;
+                $total_page_news = ceil($total_news/$limit);
+                $get_pagination_news = $news->get_news_pagination($news_start,$limit);
+                if($get_pagination_news){
+                    while($result = $get_pagination_news->fetch_assoc()){
+            ?>
             <div class="image group">
                 <div class="grid images_3_of_1">
-                    <img src="images/newsimg1.jpg" alt="" />
+                    <a href="news_detail.php?newsId=<?php echo $result['id'] ?>"><img src="admin/uploads/news/<?php echo $result['image'] ?>" alt="" /></a>
                 </div>
                 <div class="grid news_desc">
-                    <h3>Lorem Ipsum is simply dummy text </h3>
-                    <h4>Posted on Aug 13th, 2013 by <span><a href="#">Finibus Bonorum</a></span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur <a href="#" title="more">[....]</a></p>
+                    <h3><a href="news_detail.php?newsId=<?php echo $result['id'] ?>"><?php echo $result['title'] ?></a></h3>
+                    <h4>Posted on <?php echo $result['createdAt'] ?></h4>
+                    <p><?php echo $fm->textShorten($result['content'], 300) ?></p>
                 </div>
             </div>
-            <div class="image group">
-                <div class="grid images_3_of_1">
-                    <img src="images/newsimg2.jpg" alt="" />
+            <?php
+                    }
+                }
+            ?>
+            <div class="row">
+                <div class="col-sm-12 col-md-7">
+                    <div class="dataTables_paginate paging_simple_numbers">
+                        <ul class="pagination">
+                            <?php
+                                if ($current_page_news -1 > 0){
+                            ?>
+                            <li class="paginate_button page-item previous">
+                                <a href="news.php?page=<?php echo $current_page_news-1; ?>"class="page-link">Previous</a>
+                            </li>
+                            <?php
+                                }
+                            ?>
+                            <?php
+                                for($i = 1; $i <= $total_page_news; $i++){
+                            ?>
+                            <li class="paginate_button page-item <?php echo (($current_page_news == $i)?'active': '') ?>">
+                                <a href="news.php?&page=<?php echo $i; ?>" class="page-link"><?php echo $i; ?></a>
+                            </li>
+                            <?php
+                                }
+                            ?>
+                            <?php
+                                if($current_page_news +1 <= $total_page_news){
+                            ?>
+                            <li class="paginate_button page-item next">
+                                <a href="news.php?page=<?php echo $current_page_news + 1; ?>" class="page-link">Next</a>
+                            </li>
+                            <?php
+                                }
+                            ?>
+                        </ul>
+                    </div>
                 </div>
-                <div class="grid news_desc">
-                    <h3>Lorem Ipsum is simply dummy text </h3>
-                    <h4>Posted on Aug 8th, 2013 by <span><a href="#">Finibus Bonorum</a></span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur <a href="#" title="more">[....]</a></p>
-                </div>
-            </div>
-            <div class="image group">
-                <div class="grid images_3_of_1">
-                    <img src="images/newsimg3.jpg" alt="" />
-                </div>
-                <div class="grid news_desc">
-                    <h3>Lorem Ipsum is simply dummy text </h3>
-                    <h4>Posted on Aug 1st, 2013 by <span><a href="#">Finibus Bonorum</a></span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur <a href="#" title="more">[....]</a></p>
-                </div>
-            </div>
-            <div class="content-pagenation">
-                <li><a href="#">Frist</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><span>....</span></li>
-                <li><a href="#">Last</a></li>
-                <div class="clear"> </div>
             </div>
         </div>
     </div>

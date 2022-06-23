@@ -17,6 +17,7 @@
     $order = new orderController();
     $brand = new brandController();
     $slider = new sliderController();
+    $news = new newsController();
 ?>
 <?php
     header("Cache-Control: no-cache, must-revalidate");

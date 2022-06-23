@@ -17,7 +17,7 @@
                         while($result_new = $product_new->fetch_assoc()){
                 ?>
                 <div class="grid_1_of_4 images_1_of_4">
-                    <a href="details.php?productId=<?php echo $result_new['productId'] ?>"><img src="admin/uploads/<?php echo $result_new['image'] ?>" alt="" /></a>
+                    <a href="details.php?productId=<?php echo $result_new['productId'] ?>"><img src="admin/uploads/products/<?php echo $result_new['image'] ?>" alt="" /></a>
                     <h2><?php echo $result_new['productName'] ?></h2>
                     <span class="tooltiptext"><?php echo $result_new['productName'] ?></span>
                     <div class="price-details">
@@ -47,7 +47,7 @@
                         while($result = $product_featured->fetch_assoc()){
                 ?>
                 <div class="grid_1_of_4 images_1_of_4">
-                    <a href="details.php"><img src="admin/uploads/<?php echo $result['image'] ?>" alt="" /></a>
+                    <a href="details.php"><img src="admin/uploads/products/<?php echo $result['image'] ?>" alt="" /></a>
                     <h2><?php echo $result['productName'] ?></h2>
                     <span class="tooltiptext"><?php echo $result['productName'] ?></span>
                     <div class="price-details">

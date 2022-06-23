@@ -39,7 +39,7 @@
                     while($result = $get_pagination_product->fetch_assoc()){
             ?>
             <div class="grid_1_of_4 images_1_of_4">
-                <a href="details.php?productId=<?php echo $result['productId'] ?>"><img src="admin/uploads/<?php echo $result['image'] ?>" alt="" /></a>
+                <a href="details.php?productId=<?php echo $result['productId'] ?>"><img src="admin/uploads/products/<?php echo $result['image'] ?>" alt="" /></a>
                 <h2><?php echo $result['productName'] ?></h2>
                 <span class="tooltiptext"><?php echo $result['productName'] ?></span>
                 <div class="price-details">

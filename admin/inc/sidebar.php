@@ -51,20 +51,21 @@
             </div>
         </div>
     </li>
-
-
     <li class="nav-item">
         <a class="nav-link" href="slider.php">
             <i class="fas fa-fw fa-wrench"></i>
             <span>Slider</span></a>
     </li>
-
     <li class="nav-item">
         <a class="nav-link" href="contact.php">
             <i class="fa fa-fw fa-info"></i>
             <span>Contact</span></a>
     </li>
-
+    <li class="nav-item">
+        <a class="nav-link" href="news.php">
+            <i class="fa fa-fw fa-newspaper"></i>
+            <span>News</span></a>
+    </li>
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>

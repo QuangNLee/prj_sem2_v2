@@ -6,7 +6,7 @@
 <?php
     $cat = new categoryController();
     if(!isset($_GET['catId']) || $_GET['catId'] == NULL){
-        echo "<script>window.location ='catlist.php'</script>";
+        echo "<script>window.location ='category.php'</script>";
     } else {
         $id = $_GET['catId'];
     }

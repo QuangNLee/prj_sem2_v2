@@ -23,7 +23,7 @@
             $div = explode('.',$file_name);
             $file_ext = strtolower(end($div));
             $unique_image = substr(md5(time()), 0, 10).'.'.$file_ext;
-            $uploaded_image = "uploads/".$unique_image;
+            $uploaded_image = "uploads/sliders/".$unique_image;
             if($name == "" || $type == ""){
                 $alert = "<span style='color: red; font-size: 18px'>Fields must be not empty!!!</span>";
                 return $alert;
