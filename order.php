@@ -58,13 +58,13 @@
                                 while($result = $get_pagination_order->fetch_assoc()){
                         ?>
                         <tr>
-                            <td><?php echo $result['productName'] ?></td>
-                            <td><img src="admin/uploads/products/<?php echo $result['image'] ?>" alt=""/></td>
-                            <td><?php echo $fm->format_currency($result['unitPrice']) ?> VND</td>
-                            <td><?php echo $result['quantity'] ?></td>
-                            <td><?php echo $fm->format_currency($result['total']) ?> VND</td>
-                            <td><?php echo $fm->formatDate($result['orderDate']) ?></td>
-                            <td>
+                            <td style="text-align: center;vertical-align: middle"><?php echo $result['productName'] ?></td>
+                            <td style="text-align: center;vertical-align: middle"><img src="admin/uploads/products/<?php echo $result['image'] ?>" style="height: 60px; width: 80px" alt=""/></td>
+                            <td style="text-align: center;vertical-align: middle"><?php echo $fm->format_currency($result['unitPrice']) ?> VND</td>
+                            <td style="text-align: center;vertical-align: middle"><?php echo $result['quantity'] ?></td>
+                            <td style="text-align: center;vertical-align: middle"><?php echo $fm->format_currency($result['total']) ?> VND</td>
+                            <td style="text-align: center;vertical-align: middle"><?php echo $fm->formatDate($result['orderDate']) ?></td>
+                            <td style="text-align: center;vertical-align: middle">
                                 <?php
                                 if($result['orderType'] == 0){
                                     echo '<span style="text-align: center; color: red">Offline Payment</span>';
@@ -73,7 +73,7 @@
                                 }
                                 ?>
                             </td>
-                            <td>
+                            <td style="text-align: center;vertical-align: middle">
                                 <?php
                                 if($result['status'] == 0) {
                                     echo '<span style="color: #FF8C00;">Delivering</span>';
@@ -89,14 +89,14 @@
                             <?php
                             if($result['status'] == 0){
                                 ?>
-                                <td>
+                                <td style="text-align: center;vertical-align: middle">
                                     <a onclick="return confirm('Do you want to cancel?')" href="?cancelId=<?php echo $result['id'] ?>&productId=<?php echo $result['productId'] ?>
                         &quantity=<?php echo $result['quantity'] ?>">Cancel</a>
                                 </td>
                                 <?php
                             } else if ($result['status'] == 1){
                                 ?>
-                                <td>
+                                <td style="text-align: center;vertical-align: middle">
                                     <a href="?confirmId=<?php echo $result['id'] ?>&productId=<?php echo $result['productId'] ?>
                         &quantity=<?php echo $result['quantity'] ?>">Accept</a> ||
                                     <a onclick="return confirm('Do you want to cancel?')" href="?cancelId=<?php echo $result['id'] ?>&productId=<?php echo $result['productId'] ?>
@@ -105,7 +105,7 @@
                                 <?php
                             } else {
                                 ?>
-                                <td>x</a></td>
+                                <td style="text-align: center;vertical-align: middle">x</a></td>
                                 <?php
                             }
                             ?>

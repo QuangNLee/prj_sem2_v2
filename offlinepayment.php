@@ -48,11 +48,11 @@
                                         $i++;
                             ?>
                             <tr>
-                                <td><?php echo $fm->textShorten($result['productName'], 50) ?></td>
-                                <td><img src="admin/uploads/products/<?php echo $result['image'] ?>" alt=""/></td>
-                                <td><?php echo $fm->format_currency($result['price']) ?> VND</td>
-                                <td><?php echo $result['quantity'] ?></td>
-                                <td><?php
+                                <td style="text-align: center;vertical-align: middle"><?php echo $fm->textShorten($result['productName'], 50) ?></td>
+                                <td style="text-align: center;vertical-align: middle"><img src="admin/uploads/products/<?php echo $result['image'] ?>" style="height: 60px; width: 80px" alt=""/></td>
+                                <td style="text-align: center;vertical-align: middle"><?php echo $fm->format_currency($result['price']) ?> VND</td>
+                                <td style="text-align: center;vertical-align: middle"><?php echo $result['quantity'] ?></td>
+                                <td style="text-align: center;vertical-align: middle"><?php
                                     $total = $result['price'] * $result['quantity'];
                                     echo $fm->format_currency($total);
                                     ?>
