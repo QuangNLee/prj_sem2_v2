@@ -20,139 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00471261-fae5-4777-a0e1-2ca05784b20f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/brandedit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/brandedit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/categoryedit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/categoryedit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/inc/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inc/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/productedit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/productedit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/00ba65c837.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/0903a78fc0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/0ac7cba755.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/0acb780ec6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/0aec7b0879.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/113da4d168.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/16dffc4fb9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/1781f31aaf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/1a6f674e94.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/1c9dcfe262.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/1cb1ccef95.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/1e88c6c1f8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/1fe64550c2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/2072363280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/22452c7f70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/24b249942e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/290d653a2f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/2993b9bcda.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/2a0931bf73.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/32f3ef91e4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/3487993454.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/35d41cd64f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/37106f5498.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/3817c8c139.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/3f11583275.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/41689ca1d9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/41f13b51ad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/42833cd160.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/433e8cea3b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/44c4e70266.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/461f7edd01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/4bd016b1cd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/4de2533418.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/519e153543.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/533cf13a83.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/53d2a6c09c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/5532e555ce.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/557aafc411.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/5695f6b9e7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/56e71a58d3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/595663083f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/5ad8f92872.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/5e8c2322d7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/6166ecbfb7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/636bb0b6b6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/6564dc6ae0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/68db805411.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/692ad2df22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/6e6ed770f3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/71c589fce2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/7650bb0c46.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/7a71482e25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/8096823396.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/82c5971198.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/860de269c4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/87c4641c59.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/957d2356f5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/97ab642e1c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/9851a606f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/9aa2df3483.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/9be7c96668.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/9e7d961bd7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/9f63d772d9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/a350f3371c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/a3b8271c34.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/a6e01b3212.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/aa0db7e46f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/ac8bbf9c38.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/ad32264f17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/adf5a8dd20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/b05c5a2c3e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/b3b70b851c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/b3d4142587.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/b42b942b54.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/b803f80e20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/b931aef75c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/b9b866afa8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/bc6530f015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/bc8b8b43d9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/c06a352fd3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/c0dea80a7e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/c633f1e2da.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/c802e9bdba.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/ca898d032e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/cbcecc5c75.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/cc8119cc43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/cd9c9c77f8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/d13673b4d8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/d1824a9dfa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/d244342b37.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/d2698f6772.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/d58b91f9a6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/d9bc28b741.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/db7723437c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/dba29860d0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/e1a861fe3e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/ebb376f72f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/ee64ae91d6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/f73b40e99b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/f766a28e98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/fa91446505.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/fc26d40054.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/fc61676d9b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/fe94001126.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/fefc8bd422.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare.php" beforeDir="false" afterPath="$PROJECT_DIR$/compare.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/productController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/productController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sliderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favorite.php" beforeDir="false" afterPath="$PROJECT_DIR$/favorite.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/news_detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offlinepayment.php" beforeDir="false" afterPath="$PROJECT_DIR$/offlinepayment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlinepayment.php" beforeDir="false" afterPath="$PROJECT_DIR$/onlinepayment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orderdetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderdetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productbybrand.php" beforeDir="false" afterPath="$PROJECT_DIR$/productbybrand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productbycat.php" beforeDir="false" afterPath="$PROJECT_DIR$/productbycat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj_sem2(without datatype).PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj_sem2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj_sem2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/prj_sem2.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +83,7 @@
       <workItem from="1655908156836" duration="8138000" />
       <workItem from="1655951216126" duration="1595000" />
       <workItem from="1655967476929" duration="11568000" />
+      <workItem from="1656037288999" duration="2789000" />
     </task>
     <servers />
   </component>
