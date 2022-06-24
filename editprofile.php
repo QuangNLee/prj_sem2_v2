@@ -79,11 +79,6 @@
                             <td><input type="text" name="phone" value="<?php echo $result['phone'] ?>"></td>
                         </tr>
                         <tr>
-                            <td>Email</td>
-                            <td>:</td>
-                            <td><input type="text" name="email" value="<?php echo $result['email'] ?>"></td>
-                        </tr>
-                        <tr>
                             <td colspan="3"><input type="submit" name="save" value="Save" class="grey"></td>
                         </tr>
                         <?php

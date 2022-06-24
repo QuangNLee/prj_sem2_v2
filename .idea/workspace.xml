@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="00471261-fae5-4777-a0e1-2ca05784b20f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj_sem2(without datatype).PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj_sem2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prj_sem2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/prj_sem2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/customerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/customerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/editprofile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +83,8 @@
       <workItem from="1655967476929" duration="11568000" />
       <workItem from="1656037288999" duration="2789000" />
       <workItem from="1656042414516" duration="64000" />
+      <workItem from="1656048671714" duration="784000" />
+      <workItem from="1656080237810" duration="1035000" />
     </task>
     <servers />
   </component>

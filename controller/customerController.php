@@ -78,11 +78,10 @@
             $name = mysqli_real_escape_string($this->db->link, $data['name']);
             $city = mysqli_real_escape_string($this->db->link, $data['city']);
             $zipcode = mysqli_real_escape_string($this->db->link, $data['zipcode']);
-            $email = mysqli_real_escape_string($this->db->link, $data['email']);
             $address = mysqli_real_escape_string($this->db->link, $data['address']);
             $district = mysqli_real_escape_string($this->db->link, $data['district']);
             $phone = mysqli_real_escape_string($this->db->link, $data['phone']);
-            if($name == "" || $city == "" || $zipcode == "" || $email == "" || $address == "" || $district == "" || $phone == ""){
+            if($name == "" || $city == "" || $zipcode == "" || $address == "" || $district == "" || $phone == ""){
                 $alert = "<span class='error'>Fields must be not empty!!!</span>";
                 return $alert;
             } else {
@@ -93,7 +92,6 @@
                     city = '$city',
                     zipcode = '$zipcode',
                     phone = '$phone',
-                    email = '$email'
                     WHERE id = '$id'";
                 $result = $this->db->update($query);
                 if($result){

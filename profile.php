@@ -38,11 +38,6 @@
                                 <td>:</td>
                                 <td><?php echo $result['district'] ?></td>
                             </tr>
-                            <!--                <tr>-->
-                            <!--                    <td>City</td>-->
-                            <!--                    <td>:</td>-->
-                            <!--                    <td>--><?php //echo $result['city'] ?><!--</td>-->
-                            <!--                </tr>-->
                             <tr>
                                 <td>Zipcode</td>
                                 <td>:</td>
@@ -52,11 +47,6 @@
                                 <td>Phone</td>
                                 <td>:</td>
                                 <td><?php echo $result['phone'] ?></td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>:</td>
-                                <td><?php echo $result['email'] ?></td>
                             </tr>
                             <tr>
                                 <td>Password</td>
